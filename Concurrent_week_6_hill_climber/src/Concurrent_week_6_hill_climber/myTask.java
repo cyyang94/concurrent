@@ -48,9 +48,7 @@ public class myTask implements Runnable{
 			Double newNumber = myList[i] + randomNumber;
 			
 			if( newNumber <= 5.12 && 
-				newNumber >= -5.12 
-				// this code is used only if we compare cell values instead of overall function value
-				/* && (myList[i] * myList[i]) > (newNumber * newNumber)*/)
+				newNumber >= -5.12 )
 			{
 				myList[i] = newNumber;
 			}
