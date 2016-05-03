@@ -61,7 +61,7 @@ public class myTask implements Runnable{
 	
 	//reverts to previous value
 	public void revert(){
-		for(int i = 0;i < 100; i++){
+		for(int i = 0; i < 100; i++){
 			this.myList[i] = this.prev[i];
 		}
 	}

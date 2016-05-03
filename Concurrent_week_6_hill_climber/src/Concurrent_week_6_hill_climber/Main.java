@@ -12,8 +12,8 @@ public class Main {
 
 		ExecutorService exec = Executors.newFixedThreadPool(5);
 		
-		for(int i = 0;i < 200; i++){
-			for(int j = 0;j<100; j++){
+		for(int i = 0; i < 200; i++){
+			for(int j = 0; j < 100; j++){
 				numbers[i][j] = Math.random() * (5.12 - -5.12) + -5.12;
 			}
 			tasks[i] = new myTask(numbers[i]);
@@ -35,7 +35,7 @@ public class Main {
 	
 	public static Double getMin(myTask[] tasks){
 		Double min = 99999999.999;
-		for(int i = 0; i< 200;i ++){
+		for(int i = 0; i< 200; i++){
 			min = min > tasks[i].getMin() ? tasks[i].getMin() : min;
 		}
 		
